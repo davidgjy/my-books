@@ -25,7 +25,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.jnj.autocloud.ruleengine.controller"))
+                .apis(RequestHandlerSelectors.basePackage("org.genesis.mybooks.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
